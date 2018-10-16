@@ -63,7 +63,7 @@ linkedin:          samantha-tang-a8876a148
 #hackernews:        username
 
 # Gems
-gems:
+plugins:
   - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
