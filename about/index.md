@@ -45,7 +45,7 @@ comments: false
 
 <p style="text-align:left;"> <b> CS61A &#38; Data 8 Lab Assistant </b>
 <span style="float:right;"> <i> 08/17-Present </i> </span> <br/>
-		<i>Nomura Research Group</i> <br/>
+		<i>University of California, Berkeley</i> <br/>
 			<ul>
 				<li> Maintain laboratory finances and BearBuy online purchasing system </li>
 			</ul>
