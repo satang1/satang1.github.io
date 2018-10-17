@@ -12,7 +12,8 @@ comments: false
 <p style="text-align:left;"> 
 	<b> University of California, Berkeley </b>
 	<span style="float:right;"> <i> 08/17-Present </i> </span> <br/>
-	Major: Data Science &#38; Statistics; GPA: 3.818
+	Major: Data Science &#38; Statistics; GPA: 3.818 <br/>
+	Expected Graduation: May 2021
 </p>
 
 
@@ -21,7 +22,7 @@ comments: false
 * Familiar: SQL, Scheme, R
 * Libaries: Numpy, Pandas
 * Operating Systems: Mac OS, Windows
-* Other: Fusion 360, Photoshop
+* Other: Fusion 360, Juypter Notebooks, git
 
 
 ## Experience
@@ -61,4 +62,8 @@ comments: false
 
 </p>
 
-
+## Related Courses
+* Foundations of Data Science
+* Structure and Interpretations of Computer Programs
+* Data Structures
+* Linear Algebra and Differential Equations
