@@ -1,3 +1,13 @@
+// Safari back-button fix (added this from github)
+window.onpageshow = function(event) {
+    if ($(".container").hasClass('fadeOut')) {
+        $(".container").removeClass("fadeOut").addClass("fadeIn");
+    }
+    if ($(".wrapper").hasClass('fadeOut')) {
+        $(".wrapper").removeClass("fadeOut").addClass("fadeIn");
+    }
+}
+
 // dl-menu options
 $(function() {
   $( '#dl-menu' ).dlmenu({
