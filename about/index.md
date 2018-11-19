@@ -6,7 +6,7 @@ date: 2018-10-15
 comments: false
 ---
     
-<center>Samantha is an undergraduate at UC Berkeley studying Data Science and Statistics. This site is currently under construction.</center>
+<center>Last updated: Nov 2018</center>
 
 ## Education
 <p style="text-align:left;"> 
@@ -62,8 +62,11 @@ comments: false
 
 </p>
 
-## Related Courses
+## Relevant Courses
 * Foundations of Data Science
 * Structure and Interpretations of Computer Programs
 * Data Structures
 * Linear Algebra and Differential Equations
+
+## Contact
+* satang1@berkeley.edu

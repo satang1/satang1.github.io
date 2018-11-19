@@ -5,7 +5,7 @@ description:        "Samantha is an undergraduate at UC Berkeley studying Data S
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/head_pic_sq.png'
-background:         'assets/img/Sky.jpg'
+background:         'assets/img/from_snapchat.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 # url:                https://github.com/satang1
