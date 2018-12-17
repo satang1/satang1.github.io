@@ -6,13 +6,13 @@ date: 2018-10-15
 comments: false
 ---
     
-<center>Last updated: Nov 2018</center>
+<center>Last updated: Dec 2018</center>
 
 ## Education
 <p style="text-align:left;"> 
 	<b> University of California, Berkeley </b>
 	<span style="float:right;"> <i> 08/17-Present </i> </span> <br/>
-	Major: Data Science &#38; Statistics; GPA: 3.818 <br/>
+	Major: Data Science &#38; Statistics <br/>
 	Expected Graduation: May 2021
 </p>
 
@@ -44,11 +44,12 @@ comments: false
 </p>
 
 
-<p style="text-align:left;"> <b> CS61A &#38; Data 8 Lab Assistant </b>
+<p style="text-align:left;"> <b> CS61A (18.5 hrs) &#38; Data 8 (22 hrs) Lab Assistant </b>
 <span style="float:right;"> <i> 08/17-Present </i> </span> <br/>
 		<i>University of California, Berkeley</i> <br/>
 			<ul>
-				<li> Maintain laboratory finances and BearBuy online purchasing system </li>
+				<li> CS61A: Reinforce understanding of introductory concepts concerning recursion, trees, list comprehension, higher order functions, and object oriented programming </li>
+				<li> Data8: Introduce and strengthen understanding of A/B testing, normal distributions, least squares, linear regression, and basic k-NN classification</li>
 			</ul>
 </p>
 
@@ -67,6 +68,13 @@ comments: false
 * Structure and Interpretations of Computer Programs
 * Data Structures
 * Linear Algebra and Differential Equations
+<br>
+<br>
+(Intended Courses for Spring 2019)
+* Multivariable Calculus 
+* Probabilty for Data Science 
+* Principles and Techniques of Data Science 
+* Machine Learning Decal
 
 ## Contact
 * satang1@berkeley.edu
