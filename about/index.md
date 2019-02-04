@@ -6,21 +6,21 @@ date: 2018-10-15
 comments: false
 ---
     
-<center>Last updated: Dec 2018</center>
+<center>Last updated: Feb 2019</center>
 
 ## Education
 <p style="text-align:left;"> 
 	<b> University of California, Berkeley </b>
 	<span style="float:right;"> <i> 08/17-Present </i> </span> <br/>
-	Major: Data Science &#38; Statistics <br/>
+	Major: Data Science; GPA: 3.725 <br/>
 	Expected Graduation: May 2021
 </p>
 
 
 ## Technical Skills
 * Proficient: Python, Java
-* Familiar: SQL, Scheme, R
-* Libaries: Numpy, Pandas
+* Familiar: SQL, Scheme
+* Libaries: Numpy, Pandas, Matplotlib
 * Operating Systems: Mac OS, Windows
 * Other: Fusion 360, Juypter Notebooks, git
 
@@ -68,13 +68,10 @@ comments: false
 * Structure and Interpretations of Computer Programs
 * Data Structures
 * Linear Algebra and Differential Equations
-<br>
-<br>
-(Intended Courses for Spring 2019)
 * Multivariable Calculus 
 * Probabilty for Data Science 
 * Principles and Techniques of Data Science 
-* Machine Learning Decal
+
 
 ## Contact
 * satang1@berkeley.edu
