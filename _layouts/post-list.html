@@ -21,6 +21,7 @@ layout: compress
                         <i class="fa fa-home"></i>
                     </a>
                 </div>
+                {{ content }} <!-- added {{ content }} here -->
                 <div class="post-list">
                     {% for post in site.posts %} 
                         {% if post.project == null %}
