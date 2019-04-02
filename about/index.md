@@ -12,15 +12,16 @@ comments: false
 <p style="text-align:left;"> 
 	<b> University of California, Berkeley </b>
 	<span style="float:right;"> <i> 08/17-Present </i> </span> <br/>
-	Major: Data Science; GPA: 3.725 <br/>
+	Major: Data Science; <br/>
+	Intended Concentration: Business/Industrial Analytics <br/>
 	Expected Graduation: May 2021
 </p>
 
 
 ## Technical Skills
 * Proficient: Python, Java
-* Familiar: SQL, Scheme
-* Libaries: Numpy, Pandas, Matplotlib
+* Familiar: SQL
+* Libaries: Numpy, Pandas, Matplotlib, Seaborn
 * Operating Systems: Mac OS, Windows
 * Other: Fusion 360, Juypter Notebooks, git
 
@@ -30,7 +31,7 @@ comments: false
 <span style="float:right;"> <i> 8/18-Present </i> </span> <br/>
 		<i>University of California, Berkeley BIDS</i> <br/>
 			<ul> 
-				<li> Conducting research under Ciera Martinez on 3D scanned data images from MorphoSource database while contributing to Cabinet of Curiosity natural history  <a href="https://cabinetofcuriosity.github.io/cabinetofcuriosityplaysite/">database blog</a> </li>
+				<li> Conducting research under Ciera Martinez on 3D scanned data images from MorphoSource database while contributing to Cabinet of Curiosity natural history  <a href="http://curiositydata.org">database blog</a> </li>
 			</ul>
 </p>
 
@@ -71,6 +72,7 @@ comments: false
 * Multivariable Calculus 
 * Probabilty for Data Science 
 * Principles and Techniques of Data Science 
+* Human Contexts and Ethics of Data
 
 
 ## Contact
