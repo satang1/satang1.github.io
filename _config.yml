@@ -4,7 +4,7 @@ bio:                "Aspiring Data Scientist"
 description:        "Samantha is an undergraduate at UC Berkeley studying Data Science."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/head_pic_sq.png'
+logo:               'assets/img/light_headshot_sq.jpg'
 background:         'assets/img/from_snapchat.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
