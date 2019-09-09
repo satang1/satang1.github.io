@@ -9,6 +9,8 @@ main:
   #   url: /about/
   - title: "Posts"
     url: /Posts/
+  - title: "Test"
+    url: /test/
   # - title: "Projects" #for when I have to separate my projects later
   #   url: /projects-archive/
   # - title: "Sample Collections"
