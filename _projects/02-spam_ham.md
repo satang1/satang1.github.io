@@ -11,16 +11,16 @@ header:
 
 The aim of this spam/ham classification project was to create a classifier that would distinguish between spam (junk mail) and ham mail. By the end of this project, I was comfortable with (1) feature engineering with text data (2) Using sklearn libraries to process data and fit models (3) Validating the performance of my model and minimizing overfitting (4) Generating and analyzing precision-recall curves. 
 
-Part 1) Initial Analysis and Basic EDA
+**Part 1) Initial Analysis and Basic EDA**
 
 
-The dataset I was with consisted of 8348 (training set)labeled examples and 1000 unlabeled emails (test set). The dataframe used contains 4 initial columns: id (identifier of training example), subject (subject of email), email (text of the email), spam (1 if the email is spam, and 0 if ham). Note that the results of my predictions were submitted to Kaggle for evaluation. 
+The dataset I used consisted of 8348 (training set) labeled examples and 1000 unlabeled emails (test set). The dataframe created contained 4 initial columns: id (identifier of training example), subject (subject of email), email (text of the email), spam (1 if the email is spam, and 0 if ham). Note that the results of my predictions were submitted to Kaggle for evaluation, where I received over 90% accuracy in classifying spam/ham emails. A summary of my process, thoughts, and evaluations are discussed below. 
 
 <img src="/assets/img/spam_ham/initial_df.png">
 
 As a preliminary check, I considered whether there were any missing or NaN values in the dataframe, and filled in any necessary information. (i.e. 6 rows in the "subject" column were filled in with .fillna). 
 
-And if we take a look at the first ham and first spam email texts of the training set, we are able to infer some potential patterns which may have to differentiate between ham/spam emails: 
+And if I take a look at the first ham and first spam email texts of the training set, I am able to infer some potential patterns which may help to differentiate between ham/spam emails: 
 
 First Ham Email: 
 
@@ -58,10 +58,10 @@ First Spam Email:
 	 </html>
 
 
-Looking at the content of the two emails, the first email (which is not spam) is mainly telling the reader news about what is happening in the world, or relaying pertinent information. Therefore, the message is straight to the point, and less wordy when compared to the spam email which uses "persuasive" words like "guarantee" and "more than enough", etc. Thus, the spam email is noticeably longer and wordier than the ham email.
+Looking at the content of the two emails, the first email (which is not spam) is mainly telling the reader news about what is happening in the world, or relaying pertinent information. Therefore, the message is straight to the point, and less wordy when compared to the spam email which uses "persuasive" words like "guarantee" and "more than enough", etc. The spam email is also noticeably longer and wordier than the ham email.
 
 
-At this point, we conducted at training validation split with the sklearn.model selection train_test_split method for a test size of 0.1. This is so that I whill have a validation dataset to assess the performace of my classifer once I am done with training my classifier. 
+At this point, I conducted at training validation split with the sklearn.model selection train_test_split method for a test size of 0.1. This is so that I will have a validation dataset to assess the performace of my classifer once I am done training my classifier. 
 
 **Basic Feature Engineering**
 
@@ -87,7 +87,7 @@ I've also created a class conditional density plot like the one shown below whic
 <img src="/assets/img/spam_ham/dist_plot.png">
 
 
-If we take a look at a boxplot of spam/ham email lengths, it is also obvious that spam emails are wordier than ham emails. # This is because the median (50% line) is much higher than the median line of the ham box plot. Also, excluding the outliers (which are present in both ham and spam), the upper quartile of the boxplot on the spam is much longer than the upper quartile of the ham boxplot, which indicates that 25% of the data resides in this interval and is much larger/wordier than ham emails. This is a good indicator that emails with lengths greater than 3000 are spam emails. (You can also see this disparity by calculating the mean email length, which verifies that spam length is usually wordier than ham length). 
+If I take a look at a boxplot of spam/ham email lengths, it is also obvious that spam emails are wordier than ham emails. # This is because the median (50% line) is much higher than the median line of the ham box plot. Also, excluding the outliers (which are present in both ham and spam), the upper quartile of the boxplot on the spam is much longer than the upper quartile of the ham boxplot, which indicates that 25% of the data resides in this interval and is much larger/wordier than ham emails. This is a good indicator that emails with lengths greater than 3000 are spam emails. (You can also see this disparity by calculating the mean email length, which verifies that spam length is usually wordier than ham length). 
 
 
 <img src="/assets/img/spam_ham/bar_spam.png">
@@ -139,7 +139,7 @@ In this part of the project, I processed my training set data to create the corr
 	Output: 0.9065868263473054
 
 
-At this point it is also a good idea to compare my model with a zero_predictor classifer to evaluate the precision, recall and false alarm rate of the email classifications. First will define the following: 
+I will also point out that I compared my model with a zero_predictor classifer to evaluate the precision, recall and false alarm rate of the email classifications. First I will define the following: 
 
 <li> False positives: ham getting classified as spam (not in inbox) </li> 
 <li> False negatives: spam getting classified as ham (in inbox)</li> 
@@ -187,24 +187,22 @@ At this point it is also a good idea to compare my model with a zero_predictor c
 	Output: accuracy:  0.7447091707706642 ; recall:  0.0
 
 
-After creating out zero_predictor, we can briefly discuss our observations and why we observe what we see in 6a and 6b: 
+After creating out zero_predictor, I briefly discussed my observations and why I observed what I saw in 6a and 6b: 
 <ul>
-<li> False positives (FP) are the number of emails that are labeled/classifed/predicted to be spam (i.e. 1 or positive) when they are actually ham (i.e. 0 or negative), and since our zero_predictor is only going to predict 0, we will have no false positives because it will never classify or predict 1. </li>
+<li> False positives (FP) are the number of emails that are labeled/classifed/predicted to be spam (i.e. 1 or positive) when they are actually ham (i.e. 0 or negative), and since our zero_predictor is only going to predict 0, I will have no false positives because it will never classify or predict 1. </li>
 
-<li> False negatives (FN) are the number of emails that are labled/predicted to be ham (i.e. 0 or negative) when in reality the email is a spam (i.e 1 or positive). And thus, from the number calculated in 6a, we see that there are 1918 emails which are incorrectly labeled as ham when they are really spam emails. </li>
+<li> False negatives (FN) are the number of emails that are labled/predicted to be ham (i.e. 0 or negative) when in reality the email is a spam (i.e 1 or positive). And thus, from the number calculated in 6a, I see that there are 1918 emails which are incorrectly labeled as ham when they are really spam emails. </li>
 
-<li> Accuracy is the proportion of correctly classified emails for both spam and ham (i.e. spam is correctly classified as spam (TP) and ham is correctly classified as ham (TN)), and thus we want the proportion of all the true positives and true negatives over all the emails classified (i.e. (TP + TN)/ (TP + TN + FP + FN)). From our calculation in 6b, we see that we acheive an accuracy rate of about 74% if we use a zero only classifier. </li>
+<li> Accuracy is the proportion of correctly classified emails for both spam and ham (i.e. spam is correctly classified as spam (TP) and ham is correctly classified as ham (TN)), and thus I want the proportion of all the true positives and true negatives over all the emails classified (i.e. (TP + TN)/ (TP + TN + FP + FN)). From our calculation in 6b, I see that I acheive an accuracy rate of about 74% if I use a zero only classifier. </li>
 
-<li> Recall (or the sensitivity) measures how good our zero-predictor classifier is at predicting a spam email (positive rate). It is the proportion of correctly classified positive emails (correct spams) over all the emails classified as spam (i.e. positive). But since our zero-predictor will never predict a 1 (or positive), we don't have any true positives and thus our recall percentage is 0. </li>
+<li> Recall (or the sensitivity) measures how good our zero-predictor classifier is at predicting a spam email (positive rate). It is the proportion of correctly classified positive emails (correct spams) over all the emails classified as spam (i.e. positive). But since our zero-predictor will never predict a 1 (or positive), I don't have any true positives and thus our recall percentage is 0. </li>
 </ul>
 
 
 Therefore, in comparision to a standard zero_predictor classifier, which only recieves about a 74% accuracy, our logisitic regression classifier recieves a 90% accuracy. 
 
-This project was only a mini-introduction to how logistic regression works. There also other methods/techniques to go about improving/classifying this spam/ham classification case study. 
 
-
-**Summary of Feature/Model Selection Process:**
+**Summary of Feature/Model Selection Process:** *(i.e. What I learned)*
 
 1. How did I find better features for my model? 
 2. What did I try that worked/didn't work?

@@ -11,9 +11,10 @@ header:
 
 
 
-**Computer Vision Image Classification**
+**Computer Vision Image Classification EDA**
 
-This classification project is meant to be an individual project. It was adapted from DS100's Final Project assignment. The primary portion of the following "notebook" is to explore the training set and consider the potential features that could separate the images into their respective categories. 
+
+This classification project is meant to be an individual project. It was adapted from DS100's Final Project assignment. The primary portion of this following notebook is to explain my exploration process for the training set and consider the potential features that could separate the images into their respective categories. Because this post is rather long, and comprises a lot of code, I will be writing up a summary of my results/exploration findings in a followup post: "Image Analysis Summary Part 1" (coming soon!).
 
 # Data Input 
 
@@ -44,7 +45,6 @@ from os.path import isfile, join
 import cv2
 
 def read_organize_data(file_path):
-    #Fill this function out, should return a dataframe with picture object, and correct encoding
     ''' Input: file_path 
                 Takes in a file path for training data ONLY, 
                 cuz file/folder formatting difference as compared to test data
@@ -422,7 +422,7 @@ test_df.head()
 
 
 
-Let's look at the first image of our test set, it looks to be an penguin! (but sideways--which makes me wonder how this will affect my analysis later...will I need to account for the orientation of the image? Perhaps not, if I'm only considering the pixel colors. Though it may be interesting to see if I could somehow incorporate orientation...maybe more penguin photos are displayed/visualized hotdog style instead of hamburger style)
+Let's look at the first image of our test set, it looks to be a penguin! (but sideways--which makes me wonder how this will affect my analysis later...will I need to account for the orientation of the image? Perhaps not, if I'm only considering the pixel colors. Though it may be interesting to see if I could somehow incorporate orientation...maybe more penguin photos are displayed/visualized hotdog style instead of hamburger style)
 
 
 ```python
@@ -2144,7 +2144,7 @@ training_df.head()
 </div>
 
 
-
+The outputs below were mainly used to inspect what the arrays and objects looked like.
 
 ```python
 training_df.dtypes
@@ -2226,6 +2226,7 @@ test_df["pictures"][0] #numpy.ndarray
             [189, 174, 172]]], dtype=uint8)
 
 
+The following commented block was used to expore my training and testing dataframes into a csv for later use in a separate notebook. 
 
 
 ```python
