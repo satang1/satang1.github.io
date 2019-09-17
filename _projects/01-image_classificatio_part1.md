@@ -34,7 +34,7 @@ from sklearn.cluster import KMeans
 from collections import Counter
 ```
 
-<h4> Using the code for reference, take the given folder and create a dataframe with the picture object, and the encoding as listed below. </h4>	
+<h4> Dataframe encoding as listed below. </h4>	
 0=Airplanes, 1=Bear, 2=Blimp, 3=Comet, 4=Crab, 5=Dog, 6=Dolphin, 7=Giraffe, 8=Goat, 9=Gorilla, 10=Kangaroo, 11=Killer-Whale, 12=Leopards, 13=Llama, 14= Penguin, 15= Porcupine, 16=Teddy-Bear, 17=Triceratops, 18=Unicorn, 19=Zebra
 
 
@@ -1557,12 +1557,10 @@ Taking a look at the information row for img_1369 (above), the average blue inte
 ```python
 # Note the source code for this is from the following website:
 # https://adamspannbauer.github.io/2018/03/02/app-icon-dominant-colors/
-# of course I can code it from scratch too, and there are many resources telling you how
-# through, for convenience, and considering how this project is a learning experience
-# I will be using the code from adam spannbauer's website
 
-# Note: there is also another notebook "dominant_color_example" 
-# going through step-by-step what each line does inside the function
+
+# Note: there is also another notebook "dominant_color_example" that I've written that
+# goes through step-by-step what each line does inside the function (will be posted in "Posts" on website)
 
 def get_dom_color(image, k=3):
     '''Takes in an image and k number of clusters 
