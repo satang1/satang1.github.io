@@ -1,5 +1,5 @@
 ---
-title: "Image Analysis Classification (part 1)"
+title: "Image Analysis Classification"
 layout: single
 classes: wide
 author_profile: true
@@ -14,7 +14,9 @@ header:
 **Computer Vision Image Classification EDA**
 
 
-This classification project is meant to be an individual project. It was adapted from DS100's Final Project assignment. The primary portion of this following notebook is to explain my exploration process for the training set and consider the potential features that could separate the images into their respective categories. Because this post is rather long, and comprises a lot of code, I will be writing up a summary of my results/exploration findings in a followup post: "Image Analysis Summary Part 1" (coming soon!).
+This classification project is meant to be an individual analysis project (despite the separation between training and test sets). The datasets were downloaded from DS100's graduate project. The primary portion of the following notebook is to explain my exploration process for the training set and consider the potential features that could separate the images into their respective categories. 
+
+Disclaimer, this post is rather long, and comprises a lot of code and my thought processes while looking through the datasets.
 
 # Data Input 
 
@@ -278,7 +280,7 @@ At this point, we can read in the testing data, and below I've defined a differe
 
 ```python
 def read_test_data(test_file_path): 
-    #code courtesy of https://stackoverflow.com/questions/33369832/read-multiple-images-on-a-folder-in-opencv-python/43049639
+    
 
     ''' Takes in the file path of test set ONLY,
     
