@@ -1557,12 +1557,10 @@ Taking a look at the information row for img_1369 (above), the average blue inte
 
 
 ```python
-# Note the source code for this is from the following website:
-# https://adamspannbauer.github.io/2018/03/02/app-icon-dominant-colors/
 
 
 # Note: there is also another notebook "dominant_color_example" that I've written that
-# goes through step-by-step what each line does inside the function (will be posted in "Posts" on website)
+# goes through step-by-step what each line does inside the function (will eventually be posted in "Posts" on website)
 
 def get_dom_color(image, k=3):
     '''Takes in an image and k number of clusters 
